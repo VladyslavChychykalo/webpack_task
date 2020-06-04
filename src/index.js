@@ -14,7 +14,7 @@ if (moduleLs.load('theme') === Theme.DARK) {
   refs.body.classList.add(Theme.DARK);
   refs.input.setAttribute('checked', true);
 } else {
-  refs.body.class = Theme.LIGHT;
+  refs.body.classList.add(Theme.LIGHT);
 }
 
 refs.input.addEventListener('change', ({ currentTarget }) => {
